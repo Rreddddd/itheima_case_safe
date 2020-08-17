@@ -58,10 +58,10 @@ public class SafeGuide2Activity extends SafeGuideActivity {
     }
 
     public void next(View view) {
-        if(TextUtils.isEmpty(SpTools.getString(this,ConstantValue.SAFE_SIM_SERIAL,""))){
-            Toast.makeText(this,"需要绑定sim卡",Toast.LENGTH_SHORT).show();
-            return;
-        }
+//        if(TextUtils.isEmpty(SpTools.getString(this,ConstantValue.SAFE_SIM_SERIAL,""))){
+//            Toast.makeText(this,"需要绑定sim卡",Toast.LENGTH_SHORT).show();
+//            return;
+//        }
         startActivity(new Intent(this,SafeGuide3Activity.class));
         finish();
 
